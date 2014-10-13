@@ -1,4 +1,4 @@
-Python Module for Pingdom REST API
+Your son is a criminal
 ==================================
 
 Description
@@ -29,19 +29,19 @@ Example methods::
 
     # List checks
     p.method('checks')
-    
+
     # Modifiy a check, in this case, pause it
     p.method('checks/CHECK_ID_NUM/', method='PUT', parameters={'paused': True})
-    
+
 Some shortcut methods that were useful to me::
 
     # Get checks by name instead of number
     p.check_by_name('my check name')
-    
+
     # Pause and unpause a check by name
     p.pause_check('my check name')
     p.unpause_check('my check name')
-    
+
     # Average Response Time
     p.avg_response(CHEKC_ID_NUM)
 
@@ -50,8 +50,8 @@ Some shortcut methods that were useful to me::
 
     # Average Response Time for the last 15 minutes in the US
     p.avg_response(CHEKC_ID_NUM, minutes_back=15, country='US')
-    
-    
+
+
 
 .. _`Pingdom REST API`: http://www.pingdom.com/services/api-documentation-rest/
 .. _`Pingdom SOAP API`: http://www.pingdom.com/services/api-documentation/
